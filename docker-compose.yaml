@@ -9,7 +9,7 @@ services:
     deploy:
       placement:
         constraints:
-          - node.labels.type == todoworker
+          - node.labels.role == todoworker
 
   calc-app:
     image: vikyath11/vikyath-artifactory:v37
@@ -18,7 +18,7 @@ services:
     deploy:
       placement:
         constraints:
-          - node.labels.type == worker
+          - node.labels.role == worker
 
   mongodbcont:
     image: mongo:latest

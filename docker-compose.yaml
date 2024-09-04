@@ -2,8 +2,8 @@ version: '3'
 
 services:
 
-  app:
-    build: ./
+  todo-app:
+    image: vikyath11/todo-app-artifactory
     ports:
       - "3001:3001"
 

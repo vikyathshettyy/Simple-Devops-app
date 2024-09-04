@@ -7,6 +7,11 @@ services:
     ports:
       - "3001:3001"
 
+  calc-app:
+    image: vikyath11/vikyath-artifactory
+    ports:
+      - "3000:3000"
+
   mongodbcont:
     image: mongo:latest
     ports:
